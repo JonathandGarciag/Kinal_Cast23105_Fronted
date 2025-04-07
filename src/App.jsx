@@ -1,18 +1,18 @@
-import { userRoutes } from "react-router-dom";
-import { ToastBar } from "react-hot-toast";
-import routes from "./routes";
+import { useRoutes } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+import routes from "./routes.jsx";
 
-export const App = () =>{
+export const App = () => {
 
-  let element = userRoutes(routes);
+  let element = useRoutes(routes);
 
   return (
     <>
       {element}
       <Toaster
         position="bottom-right"
-        reverseOrden={false}
+        reverseOrder={false}
       />
     </>
   )
-} 
+}
