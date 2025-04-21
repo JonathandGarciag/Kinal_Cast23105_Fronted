@@ -104,16 +104,6 @@ export const Register = ({switchAuthHandler}) => {
                     onBlurHandler={handleInputValidationOnBlur}
                     showErrorMessage={formState.email.showError}
                     validationMessage={emailValidationMessage}
-                    />
-                <Input
-                    field = 'password'
-                    label = 'Password'
-                    value={formState.password.value}
-                    onChangeHandler={handleInputValueChange}
-                    type= 'password'
-                    onBlurHandler={handleInputValidationOnBlur}
-                    showErrorMessage={formState.password.showError}
-                    validationMessage={validatePasswordMessage}
                 />
                 <Input
                     field = 'username'
@@ -124,6 +114,16 @@ export const Register = ({switchAuthHandler}) => {
                     onBlurHandler={handleInputValidationOnBlur}
                     showErrorMessage={formState.username.showError}
                     validationMessage={validateUsernameMessage}
+                />
+                <Input
+                    field = 'password'
+                    label = 'Password'
+                    value={formState.password.value}
+                    onChangeHandler={handleInputValueChange}
+                    type= 'password'
+                    onBlurHandler={handleInputValidationOnBlur}
+                    showErrorMessage={formState.password.showError}
+                    validationMessage={validatePasswordMessage}
                 />
                 <Input
                     field = 'passwordConfir'
