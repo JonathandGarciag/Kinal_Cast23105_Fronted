@@ -5,12 +5,11 @@ import { Content } from "../../components/dashboard/Content"
 import { Sidebar } from "../../components/navbars/Sidebar"
 import { useChannels } from "../../shared/hooks/useChannels"
 import { useUserDetails } from "../../shared/hooks"
-
 import './dashboardPage.css'
 
 export const DashboardPage = () => {
 
-  const { getChannels, allChannels, isFetching, followedChannels } = useChannels();
+  const { getChannels, allChannels, isFetching, followedChannels } = useChannels()
   const { isLogged } = useUserDetails()
 
   useEffect(() => {

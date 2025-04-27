@@ -49,7 +49,7 @@ import {
 
     const handleInputValidationOnBlur = (value, field) => {
 
-        let isValid = validatePassword(valule)
+        let isValid = validatePassword(value)
         setFormState((preState) => ({
             ...preState,
             [field]: {

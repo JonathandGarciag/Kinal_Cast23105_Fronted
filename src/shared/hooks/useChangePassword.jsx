@@ -1,7 +1,8 @@
 import toast from "react-hot-toast";
-import { changePassword } from "../../services";
+import { changePassword as changePasswordRequest } from "../../services";
 
 export const useChangePassword = () => {
+
     const changePassword = async (password, newPassword) => {
         const responseData = await changePasswordRequest({password, newPassword});
         if (responseData.error) {
